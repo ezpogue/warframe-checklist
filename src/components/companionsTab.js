@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
+import {withPrefix} from "gatsby";
 
 const CompanionsTab = ({searchQuery}) => {
     const [companions, setCompanions] = useState([]);
 
   useEffect(() => {
     async function fetchCompanions() {
-      const response = await fetch("/data/companions.json");
+      const response = await fetch(withPrefix("/data/companions.json"));
       const data = await response.json();
       const filtered = data.filter(
         (companions) => companions.masterable === true

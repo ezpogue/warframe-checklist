@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
+import {withPrefix} from "gatsby";
 
 const WarframesTab = ({searchQuery}) => {
     const [warframes, setWarframes] = useState([]);
 
   useEffect(() => {
     async function fetchWarframes() {
-      const response = await fetch("/data/warframes.json");
+      const response = await fetch(withPrefix("/data/warframes.json"));
       const data = await response.json();
       const excluded = ["Helminth", "Excalibur Prime", "Excalibur Umbra"]
       const filtered = data.filter(

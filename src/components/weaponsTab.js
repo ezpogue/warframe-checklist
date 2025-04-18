@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
+import {withPrefix} from "gatsby";
 
 const WeaponsTab = ({searchQuery}) => {
   const [weapons, setWeapons] = useState([]);
   
   useEffect(() => {
   async function fetchWeapons() {
-      const response = await fetch("/data/weapons.json");
+      const response = await fetch(withPrefix("/data/weapons.json"));
       const data = await response.json();
       const filtered = data.filter(
           (weapons) => weapons.masterable === true

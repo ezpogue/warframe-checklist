@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
+import {withPrefix} from "gatsby";
 
 const ArchwingsTab = ({searchQuery}) => {
     const [archwings, setArchwings] = useState([]);
 
   useEffect(() => {
     async function fetchArchwings() {
-      const response = await fetch("/data/archwing.json");
+      const response = await fetch(withPrefix("/data/archwing.json"));
       const data = await response.json();
       setArchwings(data);
     }
