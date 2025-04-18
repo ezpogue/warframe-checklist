@@ -3,6 +3,7 @@ import React, { useState} from "react";
 import WarframesTab from "../components/warframesTab.js";
 import WeaponsTab from "../components/weaponsTab.js";
 import CompanionsTab from "../components/companionsTab.js";
+import ArchwingsTab from "../components/archwingTab.js";
 
 const IndexPage = () => {
   const [selectedTab, setSelectedTab] = useState("warframes");
@@ -50,6 +51,19 @@ const IndexPage = () => {
         >
           Companions
         </button>
+        <button
+          onClick={() => setSelectedTab("archwings")}
+          style={{
+            padding: "0.5rem 1rem",
+            backgroundColor: selectedTab === "archwings" ? "#007bff" : "#e0e0e0",
+            color: selectedTab === "archwings" ? "#fff" : "#000",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+          }}
+        >
+          Archwing
+        </button>
         {/* Add more tabs as needed */}
       </div>
 
@@ -58,6 +72,7 @@ const IndexPage = () => {
         {selectedTab === "warframes" && <WarframesTab />}
         {selectedTab === "weapons" && <WeaponsTab />}
         {selectedTab === "companions" && <CompanionsTab />}
+        {selectedTab === "archwings" && <ArchwingsTab />}
       </div>
     </div>
   );
