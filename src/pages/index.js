@@ -11,6 +11,33 @@ const IndexPage = () => {
 
   const [searchQuery, setSearchQuery] = useState("");
 
+  const [moveSelectedToEnd, setMoveSelectedToEnd] = useState(false);
+  const [hideSelected, setHideSelected] = useState(false);
+
+  const moveSelectedToEndKey = "moveSelectedToEnd";
+  const hideSelectedKey = "hideSelected";
+
+  useEffect(() => {
+    const moveToEndSaved = localStorage.getItem(moveSelectedToEndKey);
+    const hideSaved = localStorage.getItem(hideSelectedKey);
+  
+    if (moveToEndSaved) {
+      setMoveSelectedToEnd(JSON.parse(moveToEndSaved));
+    }
+  
+    if (hideSaved) {
+      setHideSelected(JSON.parse(hideSaved));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(moveSelectedToEndKey, JSON.stringify(moveSelectedToEnd));
+  }, [moveSelectedToEnd]);
+  
+  useEffect(() => {
+    localStorage.setItem(hideSelectedKey, JSON.stringify(hideSelected));
+  }, [hideSelected]);
+
   useEffect(() => {
     const savedTab = localStorage.getItem(localStorageKey);
     if(savedTab){
@@ -102,11 +129,52 @@ const IndexPage = () => {
         </div>
       </div>
 
+      <div
+        style={{
+          marginBottom: "1.5rem",
+          display: "flex",
+          gap: "2rem",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <label style={{ display: "flex", alignItems: "center" }}>
+          <input
+            type="checkbox"
+            checked={moveSelectedToEnd}
+            onChange={(e) => setMoveSelectedToEnd(e.target.checked)}
+            style={{ marginRight: "0.5rem" }}
+          />
+          Move selected to end
+        </label>
+        <label style={{ display: "flex", alignItems: "center" }}>
+          <input
+            type="checkbox"
+            checked={hideSelected}
+            onChange={(e) => setHideSelected(e.target.checked)}
+            style={{ marginRight: "0.5rem" }}
+          />
+          Hide selected
+        </label>
+      </div>
+
       <div>
-        {selectedTab === "warframes" && <WarframesTab searchQuery={searchQuery} />}
-        {selectedTab === "weapons" && <WeaponsTab searchQuery={searchQuery}/>}
-        {selectedTab === "companions" && <CompanionsTab searchQuery={searchQuery}/>}
-        {selectedTab === "archwings" && <ArchwingsTab searchQuery={searchQuery}/>}
+        {selectedTab === "warframes" && <WarframesTab 
+          searchQuery={searchQuery}
+          moveSelectedToEnd={moveSelectedToEnd}
+          hideSelected={hideSelected} />}
+        {selectedTab === "weapons" && <WeaponsTab 
+          searchQuery={searchQuery}
+          moveSelectedToEnd={moveSelectedToEnd}
+          hideSelected={hideSelected}/>}
+        {selectedTab === "companions" && <CompanionsTab 
+          searchQuery={searchQuery}
+          moveSelectedToEnd={moveSelectedToEnd}
+          hideSelected={hideSelected}/>}
+        {selectedTab === "archwings" && <ArchwingsTab 
+          searchQuery={searchQuery}
+          moveSelectedToEnd={moveSelectedToEnd}
+          hideSelected={hideSelected}/>}
       </div>
     </div>
   );
