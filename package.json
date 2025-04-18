@@ -7,13 +7,15 @@
         "develop": "gatsby develop -H 0.0.0.0",
         "build": "gatsby build",
         "serve": "gatsby serve",
-        "clean": "gatsby clean"
+        "clean": "gatsby clean",
+        "deploy": "gh-pages -d public"
     },
     "dependencies": {
         "@wfcd/items": "latest",
         "gatsby": "^5.0.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "gh-pages": "latest"
     },
     "keywords": [
         "gatsby",
@@ -22,5 +24,9 @@
         "react"
     ],
     "author": "Ezekiel Pogue",
-    "license": "MIT"
+    "license": "MIT",
+    "homepage": "https://ezpogue.github.io/warframe-checklist",
+    "devDependencies": {
+        "gh-pages": "^6.3.0"
+    }
 }
