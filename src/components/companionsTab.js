@@ -33,6 +33,7 @@ const CompanionsTab = () => {
               name={companion.name}
               imageName={companion.imageName}
               components={companion.components}
+              wiki={companion.wikiaUrl}
             />
           ))}
         </div>

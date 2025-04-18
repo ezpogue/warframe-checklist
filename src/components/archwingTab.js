@@ -30,6 +30,7 @@ const ArchwingsTab = () => {
               name={archwing.name}
               imageName={archwing.imageName}
               components={archwing.components}
+              wiki={archwing.wikiaUrl}
             />
           ))}
         </div>

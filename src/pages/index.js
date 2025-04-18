@@ -1,5 +1,5 @@
 //@refresh reset
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import WarframesTab from "../components/warframesTab.js";
 import WeaponsTab from "../components/weaponsTab.js";
 import CompanionsTab from "../components/companionsTab.js";
@@ -7,13 +7,26 @@ import ArchwingsTab from "../components/archwingTab.js";
 
 const IndexPage = () => {
   const [selectedTab, setSelectedTab] = useState("warframes");
+  const localStorageKey = "activetab";
+
+  useEffect(() => {
+    const savedTab = localStorage.getItem(localStorageKey);
+    if(savedTab){
+      setSelectedTab(savedTab);
+    }
+  }, []);
+
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+    localStorage.setItem(localStorageKey, tab);
+  };
 
   return (
     <div style={{ padding: "2rem" }}>
       {/* Tab Buttons */}
       <div style={{ marginBottom: "1rem", display: "flex", gap: "1rem" }}>
         <button
-          onClick={() => setSelectedTab("warframes")}
+          onClick={() => handleTabChange("warframes")}
           style={{
             padding: "0.5rem 1rem",
             backgroundColor: selectedTab === "warframes" ? "#007bff" : "#e0e0e0",
@@ -26,7 +39,7 @@ const IndexPage = () => {
           Warframes
         </button>
         <button
-          onClick={() => setSelectedTab("weapons")}
+          onClick={() => handleTabChange("weapons")}
           style={{
             padding: "0.5rem 1rem",
             backgroundColor: selectedTab === "weapons" ? "#007bff" : "#e0e0e0",
@@ -39,7 +52,7 @@ const IndexPage = () => {
           Weapons
         </button>
         <button
-          onClick={() => setSelectedTab("companions")}
+          onClick={() => handleTabChange("companions")}
           style={{
             padding: "0.5rem 1rem",
             backgroundColor: selectedTab === "companions" ? "#007bff" : "#e0e0e0",
@@ -52,7 +65,7 @@ const IndexPage = () => {
           Companions
         </button>
         <button
-          onClick={() => setSelectedTab("archwings")}
+          onClick={() => handleTabChange("archwings")}
           style={{
             padding: "0.5rem 1rem",
             backgroundColor: selectedTab === "archwings" ? "#007bff" : "#e0e0e0",

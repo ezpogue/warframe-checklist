@@ -34,6 +34,7 @@ const WarframesTab = () => {
               name={warframe.name}
               imageName={warframe.imageName}
               components={warframe.components}
+              wiki={warframe.wikiaUrl}
             />
           ))}
         </div>

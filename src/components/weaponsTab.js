@@ -34,6 +34,7 @@ const WeaponsTab = () => {
                 name={weapon.name}
                 imageName={weapon.imageName}
                 components={weapon.components}
+                wiki={weapon.wikiaUrl}
               />
             ))}
           </div>

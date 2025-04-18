@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ChecklistCard = ({ name, imageName, components = [] }) => {
+const ChecklistCard = ({ name, imageName, components = [], wiki = [] }) => {
     const [checkedComponents, setCheckedComponents] = useState({});
     const localStorageKey = `components-${name}`;
 
@@ -40,8 +40,7 @@ const ChecklistCard = ({ name, imageName, components = [] }) => {
           [compName]: !prev[compName],
         }));
       };
-    const visibleComponents = components
-      .filter((c) => c.type !== "Resource" && !filteredComponents.includes(c.name));
+    const visibleComponents = components.filter((c) => c.type !== "Resource" && !filteredComponents.includes(c.name));
     
     const totalCheckboxes = visibleComponents.reduce(
       (sum, comp) => sum + comp.itemCount,
@@ -80,7 +79,7 @@ return (
   
       {/* Content Section */}
       <div>
-        <h3 style={{ margin: "0 0 0.5rem" }}>{name}</h3>
+        <h3 style={{ margin: "0 0 0.5rem" }}><a href={wiki} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>{name}</a></h3>
         {totalCheckboxes > 1 && (
   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
     {visibleComponents.map((comp, compIndex) => {
