@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwarframe_checklist=self.webpackChunkwarframe_checklist||[]).push([[125],{331:function(e,c,n){n.r(c);var t=n(159);c.default=()=>((0,t.useEffect)((()=>{"undefined"!=typeof window&&(window.location.href="/")}),[]),t.createElement("p",null,"Redirecting..."))}}]);
+//# sourceMappingURL=component---src-pages-404-js-22069d8db50d17365c28.js.map
