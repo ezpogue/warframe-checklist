@@ -9,6 +9,8 @@ const IndexPage = () => {
   const [selectedTab, setSelectedTab] = useState("warframes");
   const localStorageKey = "activetab";
 
+  const [searchQuery, setSearchQuery] = useState("");
+
   useEffect(() => {
     const savedTab = localStorage.getItem(localStorageKey);
     if(savedTab){
@@ -23,7 +25,20 @@ const IndexPage = () => {
 
   return (
     <div style={{ padding: "2rem" }}>
-      {/* Tab Buttons */}
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        style={{
+          marginBottom: "1rem",
+          padding: "0.5rem 1rem",
+          borderRadius: "6px",
+          border: "1px solid #ccc",
+          width: "100%",
+          maxWidth: "400px",
+        }}
+      />
       <div style={{ marginBottom: "1rem", display: "flex", gap: "1rem" }}>
         <button
           onClick={() => handleTabChange("warframes")}
@@ -77,15 +92,13 @@ const IndexPage = () => {
         >
           Archwing
         </button>
-        {/* Add more tabs as needed */}
       </div>
 
-      {/* Conditional Tab Rendering */}
       <div>
-        {selectedTab === "warframes" && <WarframesTab />}
-        {selectedTab === "weapons" && <WeaponsTab />}
-        {selectedTab === "companions" && <CompanionsTab />}
-        {selectedTab === "archwings" && <ArchwingsTab />}
+        {selectedTab === "warframes" && <WarframesTab searchQuery={searchQuery} />}
+        {selectedTab === "weapons" && <WeaponsTab searchQuery={searchQuery}/>}
+        {selectedTab === "companions" && <CompanionsTab searchQuery={searchQuery}/>}
+        {selectedTab === "archwings" && <ArchwingsTab searchQuery={searchQuery}/>}
       </div>
     </div>
   );

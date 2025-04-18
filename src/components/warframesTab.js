@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 
-const WarframesTab = () => {
+const WarframesTab = ({searchQuery}) => {
     const [warframes, setWarframes] = useState([]);
 
   useEffect(() => {
@@ -18,6 +18,10 @@ const WarframesTab = () => {
     fetchWarframes();
   }, []);
 
+  const filteredWarframes = warframes.filter((warframe) =>
+    warframe.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div style={{ padding: "2rem", margin: "0 auto" }}>
           <div
@@ -28,7 +32,7 @@ const WarframesTab = () => {
               justifyContent: "center",
             }}
           >
-          {warframes.map((warframe) => (
+          {filteredWarframes.map((warframe) => (
             <ChecklistCard
               key={warframe.uniqueName}
               name={warframe.name}

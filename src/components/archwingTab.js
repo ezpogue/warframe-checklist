@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 
-const ArchwingsTab = () => {
+const ArchwingsTab = ({searchQuery}) => {
     const [archwings, setArchwings] = useState([]);
 
   useEffect(() => {
@@ -14,6 +14,10 @@ const ArchwingsTab = () => {
     fetchArchwings();
   }, []);
 
+  const filteredArchwings = archwings.filter((archwing) =>
+    archwing.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div style={{ padding: "2rem", margin: "0 auto" }}>
           <div
@@ -24,7 +28,7 @@ const ArchwingsTab = () => {
               justifyContent: "center",
             }}
           >
-          {archwings.map((archwing) => (
+          {filteredArchwings.map((archwing) => (
             <ChecklistCard
               key={archwing.uniqueName}
               name={archwing.name}
