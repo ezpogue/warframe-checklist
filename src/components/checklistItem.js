@@ -4,6 +4,9 @@ const ChecklistCard = ({ name, imageName, components = [], wiki = [] }) => {
     const [checkedComponents, setCheckedComponents] = useState({});
     const localStorageKey = `components-${name}`;
 
+    const [checkedItem, setCheckedItem] = useState(false);
+    const cardKey = `card-${name}`;
+
     const filteredComponents = ["Neurodes", "Detonite Injector", "Mutagen Mass", "Fieldron", "Thrax Plasm", 
         "Ferrite", "Entrati Lanthorn", "Fate Pearl", "Aggristone", "Kovnik", "Rune Marrow", "Silphsela", 
         "Cabochon Embolos", "Trapezium Xenorhast", "Efervon Sample", "HöLlvanian Pitchweave Fragment", 
@@ -28,13 +31,22 @@ const ChecklistCard = ({ name, imageName, components = [], wiki = [] }) => {
         if (saved) {
             setCheckedComponents(JSON.parse(saved));
         }
-    },[localStorageKey]);
+        const savedCard = localStorage.getItem(cardKey);
+        if(savedCard){
+          setCheckedItem(JSON.parse(savedCard));
+        }
+    },[localStorageKey, cardKey]);
 
     useEffect(() => {
-        localStorage.setItem(localStorageKey, JSON.stringify(checkedComponents));
+      localStorage.setItem(localStorageKey, JSON.stringify(checkedComponents));
     }, [checkedComponents, localStorageKey]);
 
-    const handleCheckboxChange = (compName) => {
+    useEffect(() => {
+      localStorage.setItem(cardKey, JSON.stringify(checkedItem));
+    }, [checkedItem, cardKey]);
+
+    const handleCheckboxChange = (compName, event) => {
+        event.stopPropagation();
         setCheckedComponents((prev) => ({
           ...prev,
           [compName]: !prev[compName],
@@ -47,22 +59,51 @@ const ChecklistCard = ({ name, imageName, components = [], wiki = [] }) => {
       0
     );
 
+    const handleCardClick = () => {
+      setCheckedItem((prevState) => !prevState);
+    };
+
+    const handleLinkClick = (event) => {
+      event.stopPropagation();
+    }
+
+    const handleCheckboxClick = (event) =>{
+      event.stopPropagation();
+    }
+
 
 return (
-    <div
+    <div onClick={handleCardClick}
       style={{
         display: "flex",
+        height: "75%",
         alignItems: "center",
         flex: "1 1 300px",
         maxWidth: "500px",
         minWidth: "300px",
         padding: "1rem",
-        border: "1px solid #ccc",
+        position: "relative",
         borderRadius: "8px",
         boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
         backgroundColor: "#fff",
+        border: checkedItem ? "3px solid #4caf50" : "3px solid #ccc",
+        transition: "border 0.4s ease",
       }}
     >
+      {checkedItem && (
+        <div
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            fontSize: "24px", // Adjust the size of the checkmark
+            color: "#4caf50", // Green color for checkmark
+            zIndex: 1, // Ensures the icon appears above content
+          }}
+        >
+          ✔
+        </div>
+      )}
       {/* Image Section */}
       <div style={{ flexShrink: 0, marginRight: "1rem" }}>
         <img
@@ -79,7 +120,11 @@ return (
   
       {/* Content Section */}
       <div>
-        <h3 style={{ margin: "0 0 0.5rem" }}><a href={wiki} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>{name}</a></h3>
+        <h3 style={{ 
+          margin: "0 0 0.5rem",
+          wordWrap: "break-word",
+          overflowWrap: "break-word",
+          whiteSpace: "normal"}}><a href={wiki} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }} onClick={handleLinkClick}>{name}</a></h3>
         {totalCheckboxes > 1 && (
   <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
     {visibleComponents.map((comp, compIndex) => {
@@ -92,7 +137,8 @@ return (
               <input
                 type="checkbox"
                 checked={!!checkedComponents[checkboxKey]}
-                onChange={() => handleCheckboxChange(checkboxKey)}
+                onChange={(event) => handleCheckboxChange(checkboxKey, event)}
+                onClick={handleCheckboxClick}
               />
               <span style={{ marginLeft: "0.5rem" }}>{comp.name}</span>
             </label>

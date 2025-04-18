@@ -23,25 +23,27 @@ const WarframesTab = ({searchQuery}) => {
   );
 
   return (
-    <div style={{ padding: "2rem", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "1rem",
-              justifyContent: "center",
-            }}
-          >
-          {filteredWarframes.map((warframe) => (
-            <ChecklistCard
-              key={warframe.uniqueName}
-              name={warframe.name}
-              imageName={warframe.imageName}
-              components={warframe.components}
-              wiki={warframe.wikiaUrl}
-            />
-          ))}
-        </div>
+    <div style={{margin: "0 auto" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                  justifyContent: "flex-start",
+                  marginInline: "auto",
+                }}
+              >
+              {filteredWarframes.map((warframe) => (
+                <div key={warframe.uniqueName} style={{maxWidth: "340px"}}> 
+                  <ChecklistCard
+                    name={warframe.name}
+                    imageName={warframe.imageName}
+                    components={warframe.components}
+                    wiki={warframe.wikiaUrl}
+                  />
+              </div>
+              ))}
+            </div>
     </div>
   );
 }

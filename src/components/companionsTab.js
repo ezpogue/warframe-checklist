@@ -22,23 +22,25 @@ const CompanionsTab = ({searchQuery}) => {
   );
 
   return (
-    <div style={{ padding: "2rem", margin: "0 auto" }}>
+    <div style={{ margin: "0 auto" }}>
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               gap: "1rem",
-              justifyContent: "center",
+              justifyContent: "flex-start",
+              marginInline: "auto",
             }}
           >
           {filteredCompanions.map((companion) => (
+          <div key={companion.uniqueName} style={{maxWidth: "330px"}}>
             <ChecklistCard
-              key={companion.uniqueName}
               name={companion.name}
               imageName={companion.imageName}
               components={companion.components}
               wiki={companion.wikiaUrl}
             />
+          </div>
           ))}
         </div>
     </div>

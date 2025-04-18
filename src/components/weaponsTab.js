@@ -23,26 +23,28 @@ const WeaponsTab = ({searchQuery}) => {
   );
 
   return (
-    <div style={{ padding: "2rem", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "1rem",
-              justifyContent: "center",
-            }}
-          >
-          {filteredWeapons.map((weapon) => (
-            <ChecklistCard
-              key={weapon.uniqueName}
-              name={weapon.name}
-              imageName={weapon.imageName}
-              components={weapon.components}
-              wiki={weapon.wikiaUrl}
-            />
-          ))}
+    <div style={{ margin: "0 auto" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "1rem",
+          justifyContent: "flex-start",
+          marginInline: "auto",
+        }}
+      >
+      {filteredWeapons.map((weapon) => (
+        <div key={weapon.uniqueName} style={{maxWidth: "330px"}}>
+          <ChecklistCard
+            name={weapon.name}
+            imageName={weapon.imageName}
+            components={weapon.components}
+            wiki={weapon.wikiaUrl}
+          />
         </div>
+      ))}
     </div>
+  </div>
   );
 };
 

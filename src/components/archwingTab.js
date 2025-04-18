@@ -19,23 +19,25 @@ const ArchwingsTab = ({searchQuery}) => {
   );
 
   return (
-    <div style={{ padding: "2rem", margin: "0 auto" }}>
+    <div style={{ margin: "0 auto" }}>
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               gap: "1rem",
-              justifyContent: "center",
+              justifyContent: "flex-start",
+              marginInline: "auto",
             }}
           >
           {filteredArchwings.map((archwing) => (
+            <div key={archwing.uniqueName} style={{maxWidth: "330px"}}>
             <ChecklistCard
-              key={archwing.uniqueName}
               name={archwing.name}
               imageName={archwing.imageName}
               components={archwing.components}
               wiki={archwing.wikiaUrl}
             />
+            </div>
           ))}
         </div>
     </div>
