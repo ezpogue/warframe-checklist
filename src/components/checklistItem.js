@@ -159,6 +159,7 @@ const ChecklistCard = ({
                           onChange={(event) =>
                             handleCheckboxChange(checkboxKey, event)
                           }
+                          onClick={(event) => event.stopPropagation()}
                         />
                         <span style={{ marginLeft: "0.5rem" }}>{comp.name}</span>
                       </label>
