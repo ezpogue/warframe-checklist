@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage";
 
 const ChecklistCard = ({
   name,
@@ -8,9 +9,9 @@ const ChecklistCard = ({
   isSelected,
   onSelectionChange,
 }) => {
-  const [checkedComponents, setCheckedComponents] = useState({});
   const localStorageKey = `components-${name}`;
-  const cardKey = `card-${name}`;
+  const [checkedComponents, setCheckedComponents] = usePersistentLocalStorage(localStorageKey);
+
 
   const filteredComponents = ["Neurodes", "Detonite Injector", "Mutagen Mass", "Fieldron", "Thrax Plasm", 
     "Ferrite", "Entrati Lanthorn", "Fate Pearl", "Aggristone", "Kovnik", "Rune Marrow", "Silphsela", 
@@ -30,17 +31,6 @@ const ChecklistCard = ({
     "Recaster Neural Relay", "Star Crimzian", "Synathid Ecosynth Analyzer", "Gorgaricus Spore", "Goblite Tears", 
     "Travocyte Alloy", "Axidrol Alloy", "Scrap", "Smooth Phasmin", "Kriller Thermal Laser", "Marquise Veridos"
   ];
-
-  useEffect(() => {
-    const saved = localStorage.getItem(localStorageKey);
-    if (saved) {
-      setCheckedComponents(JSON.parse(saved));
-    }
-  }, [localStorageKey]);
-
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, JSON.stringify(checkedComponents));
-  }, [checkedComponents, localStorageKey]);
 
   const handleCheckboxChange = (compName, event) => {
     event.stopPropagation();

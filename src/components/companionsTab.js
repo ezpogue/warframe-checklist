@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
+import useSearchFilter from "../hooks/searchFilter.js";
 
 const CompanionsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
   const localStorageKey = "companionsKey";
@@ -26,28 +27,13 @@ const CompanionsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     }));
   };
 
-  let filteredCompanions = companions.filter((companion) =>
-    companion.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  if (hideSelected) {
-    filteredCompanions = filteredCompanions.filter(
-      (companion) => !selectedItems[companion.name]
-    );
-  }
-
-  if (moveSelectedToEnd) {
-    filteredCompanions.sort((a, b) => {
-      const aSelected = selectedItems[a.name] || false;
-      const bSelected = selectedItems[b.name] || false;
-
-      if (aSelected !== bSelected) {
-        return aSelected ? 1 : -1;
-      }
-
-      return 0; // Preserve original order
-    });
-  }
+  const filteredCompanions = useSearchFilter({
+    items: companions,
+    searchQuery,
+    selectedItems,
+    hideSelected,
+    moveSelectedToEnd,
+  });
 
   return (
     <div style={{ margin: "0 auto" }}>

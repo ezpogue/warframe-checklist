@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
+import useSearchFilter from "../hooks/searchFilter.js";
 
 const WarframesTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
   const localStorageKey = "warframesKey";
@@ -29,28 +30,13 @@ const WarframesTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     }));
   };
 
-  let filteredWarframes = warframes.filter((warframe) =>
-    warframe.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  if (hideSelected) {
-    filteredWarframes = filteredWarframes.filter(
-      (wf) => !selectedItems[wf.name]
-    );
-  }
-
-  if (moveSelectedToEnd) {
-    filteredWarframes.sort((a, b) => {
-      const aSelected = selectedItems[a.name] || false;
-      const bSelected = selectedItems[b.name] || false;
-
-      if (aSelected !== bSelected) {
-        return aSelected ? 1 : -1; // Unselected first
-      }
-
-      return 0; // Preserve original order
-    });
-  }
+  const filteredWarframes = useSearchFilter({
+    items: warframes,
+    searchQuery,
+    selectedItems,
+    hideSelected,
+    moveSelectedToEnd,
+  });
 
   return (
     <div style={{ margin: "0 auto" }}>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
+import useSearchFilter from "../hooks/searchFilter.js";
 
 const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
   const localStorageKey = "weaponsKey";
@@ -19,7 +20,6 @@ const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     fetchWeapons();
   }, []);
 
-  // This function handles selection/deselection in the parent component
   const handleSelectionChange = (weaponName, isSelected) => {
     setSelectedItems((prev) => ({
       ...prev,
@@ -27,28 +27,13 @@ const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     }));
   };
 
-  let filteredWeapons = weapons.filter((weapon) =>
-    weapon.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  if (hideSelected) {
-    filteredWeapons = filteredWeapons.filter(
-      (wf) => !selectedItems[wf.name]
-    );
-  }
-
-  if (moveSelectedToEnd) {
-    filteredWeapons.sort((a, b) => {
-      const aSelected = selectedItems[a.name] || false;
-      const bSelected = selectedItems[b.name] || false;
-
-      if (aSelected !== bSelected) {
-        return aSelected ? 1 : -1; // Unselected first
-      }
-
-      return 0; // Preserve original order
-    });
-  }
+  const filteredWeapons = useSearchFilter({
+    items: weapons,
+    searchQuery,
+    selectedItems,
+    hideSelected,
+    moveSelectedToEnd,
+  });
 
   return (
     <div style={{ margin: "0 auto" }}>

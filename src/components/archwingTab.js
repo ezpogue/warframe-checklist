@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
+import useSearchFilter from "../hooks/searchFilter.js";
 
 const ArchwingsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
   const localStorageKey = "archwingsKey";
@@ -25,28 +26,13 @@ const ArchwingsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     }));
   };
 
-  let filteredArchwings = archwings.filter((archwing) =>
-    archwing.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  if (hideSelected) {
-    filteredArchwings = filteredArchwings.filter(
-      (archwing) => !selectedItems[archwing.name]
-    );
-  }
-
-  if (moveSelectedToEnd) {
-    filteredArchwings.sort((a, b) => {
-      const aSelected = selectedItems[a.name] || false;
-      const bSelected = selectedItems[b.name] || false;
-
-      if (aSelected !== bSelected) {
-        return aSelected ? 1 : -1;
-      }
-
-      return 0;
-    });
-  }
+  const filteredArchwings = useSearchFilter({
+    items: archwings,
+    searchQuery,
+    selectedItems,
+    hideSelected,
+    moveSelectedToEnd,
+  });
 
   return (
     <div style={{ margin: "0 auto" }}>

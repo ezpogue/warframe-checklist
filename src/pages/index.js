@@ -1,53 +1,23 @@
 //@refresh reset
-import React, { useState, useEffect} from "react";
+import React, { useState} from "react";
 import WarframesTab from "../components/warframesTab.js";
 import WeaponsTab from "../components/weaponsTab.js";
 import CompanionsTab from "../components/companionsTab.js";
 import ArchwingsTab from "../components/archwingTab.js";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js";
 
 const IndexPage = () => {
-  const [selectedTab, setSelectedTab] = useState("warframes");
-  const localStorageKey = "activetab";
-
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const [moveSelectedToEnd, setMoveSelectedToEnd] = useState(false);
-  const [hideSelected, setHideSelected] = useState(false);
-
   const moveSelectedToEndKey = "moveSelectedToEnd";
   const hideSelectedKey = "hideSelected";
+  const localStorageKey = "activetab";
 
-  useEffect(() => {
-    const moveToEndSaved = localStorage.getItem(moveSelectedToEndKey);
-    const hideSaved = localStorage.getItem(hideSelectedKey);
-  
-    if (moveToEndSaved) {
-      setMoveSelectedToEnd(JSON.parse(moveToEndSaved));
-    }
-  
-    if (hideSaved) {
-      setHideSelected(JSON.parse(hideSaved));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem(moveSelectedToEndKey, JSON.stringify(moveSelectedToEnd));
-  }, [moveSelectedToEnd]);
-  
-  useEffect(() => {
-    localStorage.setItem(hideSelectedKey, JSON.stringify(hideSelected));
-  }, [hideSelected]);
-
-  useEffect(() => {
-    const savedTab = localStorage.getItem(localStorageKey);
-    if(savedTab){
-      setSelectedTab(savedTab);
-    }
-  }, []);
+  const [selectedTab, setSelectedTab] = usePersistentLocalStorage(localStorageKey, "warframes");
+  const [moveSelectedToEnd, setMoveSelectedToEnd] = usePersistentLocalStorage(moveSelectedToEndKey, false);
+  const [hideSelected, setHideSelected] = usePersistentLocalStorage(hideSelectedKey, false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
-    localStorage.setItem(localStorageKey, tab);
   };
 
   return (
