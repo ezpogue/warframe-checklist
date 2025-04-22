@@ -1,19 +1,23 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useRef } from "react";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage";
 
 const ActivityItem = ({ name, keyName, resetTrigger }) => {
   const [isCompleted, setIsCompleted] = usePersistentLocalStorage(keyName, false);
-
   const keyGroup = keyName.split("_")[0];
-  const trigger = resetTrigger[keyGroup];
+  const trigger = resetTrigger?.[keyGroup];
+  const initialRender = useRef(true);
 
   useEffect(() => {
+    if (initialRender.current) {
+      initialRender.current = false;
+      return; // Prevent reset on first mount
+    }
+
     if (trigger !== undefined) {
       setIsCompleted(false);
     }
-  }, [trigger, setIsCompleted]);
+  }, [trigger]);
 
-  
   const handleCardClick = () => {
     setIsCompleted(!isCompleted);
   };
@@ -51,15 +55,7 @@ const ActivityItem = ({ name, keyName, resetTrigger }) => {
           ✔
         </div>
       )}
-      <span
-        style={{
-          wordWrap: "break-word",
-          overflowWrap: "break-word",
-          whiteSpace: "normal",
-        }}
-      >
-        {name}
-      </span>
+      <span style={{ wordWrap: "break-word", whiteSpace: "normal" }}>{name}</span>
     </div>
   );
 };
