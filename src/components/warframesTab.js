@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
 
 const WarframesTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
-  const [warframes, setWarframes] = useState([]);
-  const [selectedItems, setSelectedItems] = useState({}); // To store selected cards
-
   const localStorageKey = "warframesKey";
+  const [warframes, setWarframes] = useState([]);
+  const [selectedItems, setSelectedItems] = usePersistentLocalStorage(localStorageKey);
 
   useEffect(() => {
     async function fetchWarframes() {
@@ -21,18 +21,6 @@ const WarframesTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
 
     fetchWarframes();
   }, []);
-
-  useEffect(() => {
-      const saved = localStorage.getItem(localStorageKey);
-      if (saved) {
-        setSelectedItems(JSON.parse(saved));
-      }
-    }, [localStorageKey]);
-
-  // Update selected items in localStorage
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, JSON.stringify(selectedItems));
-  }, [selectedItems]);
 
   const handleSelectionChange = (warframeName, isSelected) => {
     setSelectedItems((prev) => ({

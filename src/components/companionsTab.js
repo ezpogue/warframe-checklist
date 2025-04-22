@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
 
 const CompanionsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
-  const [companions, setCompanions] = useState([]);
-  const [selectedItems, setSelectedItems] = useState({});
-
   const localStorageKey = "companionsKey";
+  const [companions, setCompanions] = useState([]);
+  const [selectedItems, setSelectedItems] = usePersistentLocalStorage(localStorageKey);
 
   useEffect(() => {
     async function fetchCompanions() {
@@ -18,18 +18,6 @@ const CompanionsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
 
     fetchCompanions();
   }, []);
-
-  useEffect(() => {
-        const saved = localStorage.getItem(localStorageKey);
-        if (saved) {
-          setSelectedItems(JSON.parse(saved));
-        }
-      }, [localStorageKey]);
-  
-  
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, JSON.stringify(selectedItems));
-  }, [selectedItems]);
 
   const handleSelectionChange = (companionName, isSelected) => {
     setSelectedItems((prev) => ({

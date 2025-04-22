@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
 
 const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
-  const [weapons, setWeapons] = useState([]);
-  const [selectedItems, setSelectedItems] = useState({}); // Tracks selected items in the parent
-
   const localStorageKey = "weaponsKey";
+  const [weapons, setWeapons] = useState([]);
+  const [selectedItems, setSelectedItems] = usePersistentLocalStorage(localStorageKey);
 
   useEffect(() => {
     async function fetchWeapons() {
@@ -18,19 +18,6 @@ const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
 
     fetchWeapons();
   }, []);
-
-
-  useEffect(() => {
-        const saved = localStorage.getItem(localStorageKey);
-        if (saved) {
-          setSelectedItems(JSON.parse(saved));
-        }
-      }, [localStorageKey]);
-  
-  // Update selected items in localStorage when changed
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, JSON.stringify(selectedItems));
-  }, [selectedItems]);
 
   // This function handles selection/deselection in the parent component
   const handleSelectionChange = (weaponName, isSelected) => {

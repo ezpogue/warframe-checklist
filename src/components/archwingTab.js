@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ChecklistCard from "./checklistItem.js";
 import { withPrefix } from "gatsby";
+import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js"
 
 const ArchwingsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
-  const [archwings, setArchwings] = useState([]);
-  const [selectedItems, setSelectedItems] = useState({});
-
   const localStorageKey = "archwingsKey";
+  const [archwings, setArchwings] = useState([]);
+  const [selectedItems, setSelectedItems] = usePersistentLocalStorage(localStorageKey);
 
   useEffect(() => {
     async function fetchArchwings() {
@@ -17,18 +17,6 @@ const ArchwingsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
 
     fetchArchwings();
   }, []);
-
-  useEffect(() => {
-        const saved = localStorage.getItem(localStorageKey);
-        if (saved) {
-          setSelectedItems(JSON.parse(saved));
-        }
-      }, [localStorageKey]);
-  
-
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, JSON.stringify(selectedItems));
-  }, [selectedItems]);
 
   const handleSelectionChange = (archwingName, isSelected) => {
     setSelectedItems((prev) => ({
