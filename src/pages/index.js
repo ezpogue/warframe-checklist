@@ -4,6 +4,7 @@ import WarframesTab from "../components/warframesTab.js";
 import WeaponsTab from "../components/weaponsTab.js";
 import CompanionsTab from "../components/companionsTab.js";
 import ArchwingsTab from "../components/archwingTab.js";
+import ActivitiesTab from "../components/activitiesTab.js";
 import usePersistentLocalStorage from "../hooks/usePersistentLocalStorage.js";
 
 const IndexPage = () => {
@@ -96,6 +97,19 @@ const IndexPage = () => {
           >
             Archwing
           </button>
+          <button
+            onClick={() => handleTabChange("activities")}
+            style={{
+              padding: "0.5rem 1rem",
+              backgroundColor: selectedTab === "activities" ? "#007bff" : "#e0e0e0",
+              color: selectedTab === "activities" ? "#fff" : "#000",
+              border: "none",
+              borderRadius: "6px",
+              cursor: "pointer",
+            }}
+          >
+            Dailies/Weeklies
+          </button>
         </div>
       </div>
 
@@ -145,6 +159,8 @@ const IndexPage = () => {
           searchQuery={searchQuery}
           moveSelectedToEnd={moveSelectedToEnd}
           hideSelected={hideSelected}/>}
+        {selectedTab === "activities" && <ActivitiesTab 
+          />}
       </div>
     </div>
   );
