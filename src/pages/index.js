@@ -1,5 +1,6 @@
 //@refresh reset
 import React, { useState} from "react";
+import { Helmet } from "react-helmet";
 import WarframesTab from "../components/warframesTab.js";
 import WeaponsTab from "../components/weaponsTab.js";
 import CompanionsTab from "../components/companionsTab.js";
@@ -21,8 +22,13 @@ const IndexPage = () => {
     setSelectedTab(tab);
   };
 
+
+
   return (
     <div style={{ padding: "2rem", paddingLeft: "4%", paddingRight: "4%", margin: "0 auto" }}>
+      <Helmet>
+        <title>Warframe Checklist</title>
+      </Helmet>
       <div style={{
         marginBottom: "1rem",
         display: "flex",

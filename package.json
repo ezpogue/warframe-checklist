@@ -11,12 +11,13 @@
         "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "dependencies": {
-        "@wfcd/items": "latest",
+        "@wfcd/items": "^1.1270.285",
         "gatsby": "^5.0.0",
+        "gh-pages": "latest",
+        "git": "latest",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "gh-pages": "latest",
-        "git": "latest"
+        "react-helmet": "^6.1.0"
     },
     "keywords": [
         "gatsby",
