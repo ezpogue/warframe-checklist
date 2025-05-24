@@ -9,7 +9,7 @@ const TimersComponent = () => {
   const currentWeek = Math.floor(nextBaroArrival.getUTCDate() / 14);
   nextBaroArrival.setUTCDate(nextBaroArrival.getUTCDate() + (5 - nextBaroArrival.getUTCDay() + 7) % 7);
   if (currentWeek % 2 !== 0) {
-    nextBaroArrival.setUTCDate(nextBaroArrival.getUTCDate() + 7);
+    nextBaroArrival.setUTCDate(nextBaroArrival.getUTCDate() );
   }
   nextBaroArrival.setUTCHours(13, 0, 0, 0);
 
@@ -17,15 +17,24 @@ const TimersComponent = () => {
   // Set to the Sunday following Baro arrival
   nextBaroDeparture.setUTCDate(nextBaroDeparture.getUTCDate() + (5 - nextBaroDeparture.getUTCDay() + 7) % 7);
   if (currentWeek % 2 !== 0) {
-    nextBaroDeparture.setUTCDate(nextBaroDeparture.getUTCDate() + 9);
+    nextBaroDeparture.setUTCDate(nextBaroDeparture.getUTCDate() + 2);
   }
   nextBaroDeparture.setUTCHours(13, 0, 0, 0);
   
   const now = new Date()
   const isBaroHere = now >= nextBaroArrival && now < nextBaroDeparture;
 
-  const nextErgoRotation = new Date(new Date().setUTCDate(new Date().getUTCDate() + (4 - new Date().getUTCDate() % 4) + 2)).setUTCHours(0, 0, 0, 0);
-  const nextEleanorRotation = new Date(new Date().setUTCDate(new Date().getUTCDate() + (4 - new Date().getUTCDate() % 4))).setUTCHours(0, 0, 0, 0);
+  const nextErgoRotation = new Date(Date.UTC(
+  new Date().getUTCFullYear(),
+  new Date().getUTCMonth(),
+  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 0) % 4 + 4) % 4) || 4))
+));
+  const nextEleanorRotation = new Date(Date.UTC(
+  new Date().getUTCFullYear(),
+  new Date().getUTCMonth(),
+  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 2) % 4 + 4) % 4) || 4))
+));
+
 
 
 
