@@ -27,12 +27,12 @@ const TimersComponent = () => {
   const nextErgoRotation = new Date(Date.UTC(
   new Date().getUTCFullYear(),
   new Date().getUTCMonth(),
-  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 0) % 4 + 4) % 4) || 4))
+  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 3) % 4 + 4) % 4) || 4))
 ));
   const nextEleanorRotation = new Date(Date.UTC(
   new Date().getUTCFullYear(),
   new Date().getUTCMonth(),
-  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 2) % 4 + 4) % 4) || 4))
+  new Date().getUTCDate() + (((4 - ((new Date().getUTCDate() - 1) % 4 + 4) % 4) || 4))
 ));
 
 

@@ -13,7 +13,9 @@ const WeaponsTab = ({ searchQuery, moveSelectedToEnd, hideSelected }) => {
     async function fetchWeapons() {
       const response = await fetch(withPrefix("/data/weapons.json"));
       const data = await response.json();
-      const filtered = data.filter((weapon) => weapon.masterable === true);
+      const excluded = ["Lato Prime", "Skana Prime"]
+      const included = ["Catchmoon", "Gaze", "Rattleguts", "Sporelacer", "Tombfinger", "Vermisplicer", "Dokrahm", "Rabvee", "Sepfahn", "Plague Keewar", "Plague Kripath"]
+      const filtered = data.filter((weapon) => (weapon.masterable === true || included.includes(weapon.name)) && !excluded.includes(weapon.name));
       setWeapons(filtered);
     }
 

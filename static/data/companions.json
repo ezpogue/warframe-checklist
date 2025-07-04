@@ -672,7 +672,7 @@
     "attacks": [
       {
         "name": "Normal Attack",
-        "speed": 1,
+        "speed": 16.67,
         "crit_chance": 2,
         "crit_mult": 1.5,
         "status_chance": 35,
@@ -3049,14 +3049,31 @@
     "accuracy": 2.5,
     "attacks": [
       {
-        "name": "Normal Attack",
+        "name": "Direct Hit",
         "speed": 0.667,
         "crit_chance": 10,
         "crit_mult": 1.8,
         "status_chance": 10,
-        "shot_type": "Hit-Scan",
+        "shot_type": "Projectile",
+        "shot_speed": 20,
+        "flight": 20,
         "damage": {
-          "impact": 10,
+          "impact": 10
+        }
+      },
+      {
+        "name": "Cold Field",
+        "speed": 1,
+        "crit_chance": 10,
+        "crit_mult": 1.8,
+        "status_chance": 30,
+        "shot_type": "DoT",
+        "falloff": {
+          "start": 0,
+          "end": 1.5,
+          "reduction": 0.7
+        },
+        "damage": {
           "cold": 20
         }
       }
@@ -10508,7 +10525,7 @@
             "location": "Lith Y1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Carapace",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.1667,
@@ -10536,7 +10553,7 @@
             "location": "Lith Y1 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Carapace",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.2,
@@ -10564,7 +10581,7 @@
             "location": "Lith Y1 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Carapace",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.2333,
@@ -10592,7 +10609,7 @@
             "location": "Lith Y1 Relic",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Carapace",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.2533,
@@ -10626,7 +10643,7 @@
             "location": "Axi N13 Relic",
             "rarity": "Rare",
             "type": "Nautilus Prime Cerebrum",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.02,
@@ -10647,7 +10664,7 @@
             "location": "Axi N13 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Nautilus Prime Cerebrum",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.04,
@@ -10668,7 +10685,7 @@
             "location": "Axi N13 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Nautilus Prime Cerebrum",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.06,
@@ -10689,7 +10706,7 @@
             "location": "Axi N13 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Cerebrum",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.1,
@@ -10748,7 +10765,7 @@
             "location": "Lith Q2 Relic",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Systems",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeDBronze"
           },
           {
             "chance": 0.13,
@@ -10769,7 +10786,7 @@
             "location": "Lith Q2 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Systems",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeDBronze"
           },
           {
             "chance": 0.17,
@@ -10790,7 +10807,7 @@
             "location": "Lith Q2 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Systems",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeDBronze"
           },
           {
             "chance": 0.2,
@@ -10811,7 +10828,7 @@
             "location": "Lith Q2 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Nautilus Prime Systems",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeDBronze"
           }
         ],
         "masterable": false,
@@ -13512,6 +13529,17 @@
         "damage": {
           "toxin": 15
         }
+      },
+      {
+        "name": "Toxin Embed",
+        "speed": 1,
+        "crit_chance": 2.5,
+        "crit_mult": 1.5,
+        "status_chance": 20,
+        "shot_type": "DoT",
+        "damage": {
+          "toxin": 15
+        }
       }
     ],
     "category": "Primary",
@@ -13939,7 +13967,7 @@
     "armor": 80,
     "buildPrice": 15000,
     "buildQuantity": 1,
-    "buildTime": 86400,
+    "buildTime": 60,
     "category": "Sentinels",
     "components": [
       {
@@ -13971,17 +13999,6 @@
         "tradable": false,
         "drops": [],
         "masterable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
-        "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\n\nLocation: Mercury, Venus, and Uranus",
-        "itemCount": 200,
-        "imageName": "polymer-bundle-b8d240c368.png",
-        "tradable": false,
-        "drops": [],
-        "masterable": false,
-        "type": "Resource"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
@@ -14089,7 +14106,7 @@
     "productCategory": "Sentinels",
     "releaseDate": "2017-02-09",
     "shield": 250,
-    "skipBuildTimePrice": 30,
+    "skipBuildTimePrice": 1,
     "stamina": 8,
     "tradable": false,
     "type": "Sentinel",

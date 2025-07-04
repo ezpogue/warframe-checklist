@@ -8714,7 +8714,7 @@
             "location": "Axi B9 Relic",
             "rarity": "Rare",
             "type": "Baruuk Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.02,
@@ -8749,7 +8749,7 @@
             "location": "Axi B9 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Baruuk Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.04,
@@ -8784,7 +8784,7 @@
             "location": "Axi B9 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Baruuk Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.06,
@@ -8819,7 +8819,7 @@
             "location": "Axi B9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.1,
@@ -8879,7 +8879,7 @@
             "location": "Lith T13 Relic",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.11,
@@ -8935,7 +8935,7 @@
             "location": "Lith T13 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.13,
@@ -8991,7 +8991,7 @@
             "location": "Lith T13 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.17,
@@ -9047,7 +9047,7 @@
             "location": "Lith T13 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2,
@@ -9242,28 +9242,28 @@
             "location": "Axi B9 Relic",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.13,
             "location": "Axi B9 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.17,
             "location": "Axi B9 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           },
           {
             "chance": 0.2,
             "location": "Axi B9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultBBronze"
           }
         ],
         "masterable": false,
@@ -9343,7 +9343,7 @@
             "location": "Neo P8 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2,
@@ -9399,7 +9399,7 @@
             "location": "Neo P8 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2333,
@@ -9455,7 +9455,7 @@
             "location": "Neo P8 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2533,
@@ -9511,7 +9511,7 @@
             "location": "Neo P8 Relic",
             "rarity": "Uncommon",
             "type": "Baruuk Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           }
         ],
         "masterable": false,
@@ -30580,7 +30580,7 @@
             "location": "Neo D10 Relic",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.11,
@@ -30615,7 +30615,7 @@
             "location": "Neo D10 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.13,
@@ -30643,7 +30643,7 @@
             "location": "Neo G9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.17,
@@ -30664,7 +30664,7 @@
             "location": "Neo D10 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.17,
@@ -30706,14 +30706,14 @@
             "location": "Neo D10 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2,
             "location": "Neo G9 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2,
@@ -30741,7 +30741,7 @@
             "location": "Neo G9 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2533,
@@ -30755,7 +30755,7 @@
             "location": "Neo G9 Relic",
             "rarity": "Uncommon",
             "type": "Gauss Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           }
         ]
       },
@@ -30787,7 +30787,7 @@
             "location": "Neo A14 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.1667,
@@ -30829,7 +30829,7 @@
             "location": "Neo A14 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
@@ -30871,7 +30871,7 @@
             "location": "Neo A14 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2333,
@@ -30913,7 +30913,7 @@
             "location": "Neo A14 Relic",
             "rarity": "Uncommon",
             "type": "Gauss Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2533,
@@ -30961,7 +30961,7 @@
             "location": "Axi V12 Relic",
             "rarity": "Uncommon",
             "type": "Gauss Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.11,
@@ -30996,7 +30996,7 @@
             "location": "Axi V12 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.13,
@@ -31031,7 +31031,7 @@
             "location": "Axi V12 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.17,
@@ -31066,7 +31066,7 @@
             "location": "Axi V12 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
@@ -31146,7 +31146,7 @@
             "location": "Neo G9 Relic",
             "rarity": "Rare",
             "type": "Gauss Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.04,
@@ -31181,7 +31181,7 @@
             "location": "Neo G9 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Gauss Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.06,
@@ -31216,7 +31216,7 @@
             "location": "Neo G9 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Gauss Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.1,
@@ -31251,7 +31251,7 @@
             "location": "Neo G9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gauss Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeCBronze"
           }
         ],
         "masterable": false,
@@ -31883,7 +31883,7 @@
             "location": "Lith M10 Relic",
             "rarity": "Uncommon",
             "type": "Grendel Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.11,
@@ -31911,7 +31911,7 @@
             "location": "Lith M10 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Grendel Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.13,
@@ -31939,7 +31939,7 @@
             "location": "Lith M10 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Grendel Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.17,
@@ -31967,7 +31967,7 @@
             "location": "Lith M10 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Grendel Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
@@ -47795,7 +47795,7 @@
             "location": "Axi Y1 Relic",
             "rarity": "Uncommon",
             "type": "Lavos Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.13,
@@ -47809,7 +47809,7 @@
             "location": "Axi Y1 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Lavos Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.17,
@@ -47823,7 +47823,7 @@
             "location": "Axi Y1 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Lavos Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2,
@@ -47837,7 +47837,7 @@
             "location": "Axi Y1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Lavos Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           }
         ]
       },
@@ -73046,7 +73046,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/AntiMatterDrop",
         "name": "Antimatter Drop",
-        "description": "Launch a large particle of charged antimatter that will detonate contact. Direct the particle by aiming, shoot it to charge it further. Deals <DT_EXPLOSION_COLOR>Blast Damage with a guaranteed Status Effect.",
+        "description": "Launch a large particle of charged antimatter that will detonate on contact. Direct the particle by aiming, shoot it to charge it further. Deals <DT_EXPLOSION_COLOR>Blast Damage with a guaranteed Status Effect.",
         "imageName": "antimatter-drop-1a72f86ab4.png"
       },
       {
@@ -74207,7 +74207,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/AntiMatterDrop",
         "name": "Antimatter Drop",
-        "description": "Launch a large particle of charged antimatter that will detonate contact. Direct the particle by aiming, shoot it to charge it further. Deals <DT_EXPLOSION_COLOR>Blast Damage with a guaranteed Status Effect.",
+        "description": "Launch a large particle of charged antimatter that will detonate on contact. Direct the particle by aiming, shoot it to charge it further. Deals <DT_EXPLOSION_COLOR>Blast Damage with a guaranteed Status Effect.",
         "imageName": "antimatter-drop-1a72f86ab4.png"
       },
       {
@@ -84888,6 +84888,187 @@
   {
     "abilities": [
       {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/OraxiaLungeAbility",
+        "name": "Mercy's Kiss",
+        "description": "Leap onto an enemy and pierce them with Oraxia’s spider legs, dealing <DT_POISON_COLOR>Toxin Damage. Enemies defeated by this attack have a chance to drop Health or Energy Orbs.",
+        "imageName": "mercy's-kiss-97372a3361.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/OraxiaEntangleAbility",
+        "name": "Webbed Embrace",
+        "description": "Oraxia throws a creeping web to ensnare her prey. Enemies caught within the widening radius are trapped inside a cocoon that increases their Damage Vulnerability.",
+        "imageName": "webbed-embrace-665b59d8c2.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/OraxiaSpidersAbility",
+        "name": "Widow's Brood",
+        "description": "Oraxia launches a barrage of stinging darts in front of her that applies <DT_POISON_COLOR> Toxin Status Effect. Poisoned enemies spawn Scuttlers when killed.",
+        "imageName": "widow's-brood-db5889252e.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/OraxiaClimbAbility",
+        "name": "Silken Stride",
+        "description": "Unfurl Oraxia’s spider legs and go on the prowl. Oraxia is immune to Status Effects and has increased Maximum Health. Ranged Weapons are imbued with <DT_POISON_COLOR> Toxin Damage. Killing enemies causes them to burst with <DT_POISON_COLOR>Toxin.\n\nSilken Thread: Tap Dodge to leap to a targeted surface.",
+        "imageName": "silken-stride-77f68af156.png"
+      }
+    ],
+    "armor": 125,
+    "aura": "madurai",
+    "buildPrice": 25000,
+    "buildQuantity": 1,
+    "buildTime": 259200,
+    "category": "Warframes",
+    "color": 0,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaBlueprint",
+        "name": "Blueprint",
+        "description": "Sinister grace interwoven with lethal versatility; the evolution of a perfect predator. Fear's name is Oraxia.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards (Steel Path), Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Blueprint"
+          },
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards, Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Blueprint"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Oraxia Warframe.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards (Steel Path), Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Chassis Blueprint"
+          },
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards, Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Chassis Blueprint"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Oraxia Warframe.",
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards (Steel Path), Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Neuroptics Blueprint"
+          },
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards, Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Neuroptics Blueprint"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\n\nLocation: Ceres, Saturn, and Deimos",
+        "itemCount": 3,
+        "imageName": "orokin-cell-0d237af036.png",
+        "tradable": false,
+        "drops": [],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Oraxia Warframe.",
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards (Steel Path), Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Systems Blueprint"
+          },
+          {
+            "chance": 0.0769,
+            "location": "Duviri Murmur Invasion Rewards, Rotation A",
+            "rarity": "Rare",
+            "type": "Oraxia Systems Blueprint"
+          }
+        ],
+        "masterable": false
+      }
+    ],
+    "conclave": false,
+    "consumeOnBuild": true,
+    "description": "Sinister grace interwoven with lethal versatility; the evolution of a perfect predator. Fear's name is Oraxia.",
+    "health": 575,
+    "imageName": "oraxia-8a9e4aab09.png",
+    "introduced": {
+      "name": "Update 39.0",
+      "url": "https://wiki.warframe.com/w/Update_39%23Update_39.0",
+      "aliases": [
+        "39",
+        "39.0",
+        "Isleweaver"
+      ],
+      "parent": "39.0",
+      "date": "2025-06-25"
+    },
+    "isPrime": false,
+    "marketCost": 370,
+    "masterable": true,
+    "masteryReq": 0,
+    "name": "Oraxia",
+    "passiveDescription": "Wall Latching grants Predator's Lurk, rendering Oraxia invisible for |DURATION|s. ",
+    "polarities": [
+      "madurai",
+      "naramon"
+    ],
+    "power": 150,
+    "productCategory": "Suits",
+    "releaseDate": "2025-06-25",
+    "sex": "Female",
+    "shield": 125,
+    "skipBuildTimePrice": 50,
+    "sprint": 1,
+    "sprintSpeed": 1,
+    "stamina": 3,
+    "tradable": false,
+    "type": "Warframe",
+    "uniqueName": "/Lotus/Powersuits/Oraxia/Oraxia",
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/Oraxia.png?f2ec1",
+    "wikiaUrl": "https://wiki.warframe.com/w/Oraxia"
+  },
+  {
+    "abilities": [
+      {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/OdaliskFanAbility",
         "name": "Grenade Fan",
         "description": "Throw out grenades in an arc.\n\n(TAP) SHRAPNEL VORTEX\nCreates a slashing, staggering swirl of shrapnel.\n\n(HOLD) SHIELD SATELLITES\nProtea reconfigures Grenades to work as overcharging shield generators, protecting her, her allies and companions. When Shields break, a Satellite is destroyed to double minimum Shield Gate invincibility time.",
@@ -85392,7 +85573,7 @@
             "location": "Axi N13 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.1667,
@@ -85406,7 +85587,7 @@
             "location": "Meso K7 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.1667,
@@ -85434,7 +85615,7 @@
             "location": "Axi N13 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2,
@@ -85448,7 +85629,7 @@
             "location": "Meso K7 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2,
@@ -85476,7 +85657,7 @@
             "location": "Axi N13 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2333,
@@ -85490,7 +85671,7 @@
             "location": "Meso K7 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2333,
@@ -85518,7 +85699,7 @@
             "location": "Axi N13 Relic",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2533,
@@ -85532,7 +85713,7 @@
             "location": "Meso K7 Relic",
             "rarity": "Uncommon",
             "type": "Protea Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2533,
@@ -85682,7 +85863,7 @@
             "location": "Meso T8 Relic",
             "rarity": "Uncommon",
             "type": "Protea Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.11,
@@ -85717,7 +85898,7 @@
             "location": "Meso T8 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Protea Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.13,
@@ -85752,7 +85933,7 @@
             "location": "Meso T8 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Protea Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.17,
@@ -85787,7 +85968,7 @@
             "location": "Meso T8 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Protea Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2,
@@ -85853,7 +86034,7 @@
             "location": "Meso P16 Relic",
             "rarity": "Rare",
             "type": "Protea Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.04,
@@ -85881,7 +86062,7 @@
             "location": "Meso P16 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Protea Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.06,
@@ -85909,7 +86090,7 @@
             "location": "Meso P16 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Protea Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.1,
@@ -85937,7 +86118,7 @@
             "location": "Meso P16 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Protea Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeABronze"
           }
         ],
         "masterable": false,
@@ -87060,7 +87241,7 @@
             "location": "Meso R6 Relic",
             "rarity": "Rare",
             "type": "Revenant Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.04,
@@ -87102,7 +87283,7 @@
             "location": "Meso R6 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Revenant Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.06,
@@ -87144,7 +87325,7 @@
             "location": "Meso R6 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Revenant Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.1,
@@ -87186,7 +87367,7 @@
             "location": "Meso R6 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionRevenantBaruukVaultABronze"
           }
         ]
       },
@@ -87204,7 +87385,7 @@
             "location": "Axi C9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.1667,
@@ -87267,7 +87448,7 @@
             "location": "Axi C9 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2,
@@ -87330,7 +87511,7 @@
             "location": "Axi C9 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2333,
@@ -87393,7 +87574,7 @@
             "location": "Axi C9 Relic",
             "rarity": "Uncommon",
             "type": "Revenant Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2533,
@@ -87483,7 +87664,7 @@
             "location": "Lith T13 Relic",
             "rarity": "Uncommon",
             "type": "Revenant Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.11,
@@ -87518,7 +87699,7 @@
             "location": "Lith T13 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.13,
@@ -87553,7 +87734,7 @@
             "location": "Lith T13 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.17,
@@ -87588,7 +87769,7 @@
             "location": "Lith T13 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2,
@@ -87675,7 +87856,7 @@
             "location": "Neo P8 Relic",
             "rarity": "Uncommon",
             "type": "Revenant Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.13,
@@ -87724,7 +87905,7 @@
             "location": "Neo P8 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.17,
@@ -87773,7 +87954,7 @@
             "location": "Neo P8 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           },
           {
             "chance": 0.2,
@@ -87822,7 +88003,7 @@
             "location": "Neo P8 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Revenant Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionRevenantBaruukVaultABronze"
           }
         ],
         "masterable": false,
@@ -88465,15 +88646,14 @@
         "masterable": false
       },
       {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
-        "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.\n\nLocation: Mars and Uranus",
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.\n\nLocation: Earth, Lua, Eris, and Deimos",
         "itemCount": 1,
-        "imageName": "gallium-127519dba9.png",
+        "imageName": "neurodes-c027fd4a28.png",
         "tradable": false,
         "drops": [],
-        "masterable": false,
-        "type": "Resource"
+        "masterable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent",
@@ -94881,7 +95061,7 @@
             "location": "Lith Z4 Relic",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.11,
@@ -94902,7 +95082,7 @@
             "location": "Lith Z4 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.13,
@@ -94923,7 +95103,7 @@
             "location": "Lith Z4 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.17,
@@ -94944,7 +95124,7 @@
             "location": "Lith Z4 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2,
@@ -95045,7 +95225,7 @@
             "location": "Axi Y1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.1667,
@@ -95073,7 +95253,7 @@
             "location": "Axi Y1 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2,
@@ -95101,7 +95281,7 @@
             "location": "Axi Y1 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2333,
@@ -95129,7 +95309,7 @@
             "location": "Axi Y1 Relic",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2533,
@@ -95188,7 +95368,7 @@
             "location": "Lith M10 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.1667,
@@ -95216,7 +95396,7 @@
             "location": "Lith M10 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
@@ -95244,7 +95424,7 @@
             "location": "Lith M10 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2333,
@@ -95272,7 +95452,7 @@
             "location": "Lith M10 Relic",
             "rarity": "Uncommon",
             "type": "Sevagoth Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2533,
@@ -101681,29 +101861,29 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/GrappleHookAbility",
         "name": "Rip Line",
-        "description": "Valkyr hurls forth a hook. If it hits an enemy, she pulls them to her. If it hits terrain, she pulls herself to the hook's location.",
+        "description": "Valkyr hurls forth a hook and pulls herself to whatever it hits. If it hits an enemy, nearby foes are pulled in as she unleashes a coordinated Melee attack.",
         "imageName": "rip-line-b7714c7733.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/BerserkerScreamAbility",
         "name": "Warcry",
-        "description": "Valkyr lets out a rallying cry that bolsters her allies Attack Speed while slowing down nearby enemies.",
+        "description": "Valkyr lets out a rallying cry that bolsters Armor and Attack Speed for allies while in <AFFINITY_SHARE>Affinity Range.",
         "imageName": "warcry-bee9507006.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/ShieldBashAbility",
         "name": "Paralysis",
-        "description": "Valkyr unleashes her shields, stunning and damaging enemies around her.",
+        "description": "Unleash a damaging blast, slowing its victims while increasing their Melee Damage Vulnerability.",
         "imageName": "paralysis-3bfe2d9d48.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/LastStandAbility",
         "name": "Hysteria",
-        "description": "Valkyr is imbued with energy and becomes a ball of vicious rage, capable of unleashing a torrent of deadly claw attacks on unsuspecting foes.",
+        "description": "Valkyr bares her deadly claws, unleashing devastating attacks that also heal her. Valkyr becomes immune to Status Effects and her Armor bonus from Warcry is multiplied.",
         "imageName": "hysteria-e7a04e411b.png"
       }
     ],
-    "armor": 630,
+    "armor": 855,
     "aura": "madurai",
     "bpCost": 35000,
     "buildPrice": 25000,
@@ -101791,7 +101971,7 @@
     "exalted": [
       "/Lotus/Powersuits/Berserker/BerserkerMelee"
     ],
-    "health": 270,
+    "health": 650,
     "imageName": "valkyr-c1f7e5d2ab.png",
     "introduced": {
       "name": "Update 11.0",
@@ -101809,7 +101989,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Valkyr",
-    "passiveDescription": "Recover |PERCENT|% faster from being knocked down.",
+    "passiveDescription": "Valkyr accumulates Rage when hitting or killing enemies with melee weapons, increasing her Melee Damage up to |PERCENT|%. Taking fatal damage when the Rage meter is above |CONSUME|% consumes the meter, preventing death and granting |DURATION|s of invulnerability.",
     "patchlogs": [
       {
         "name": "Update 32.2.0: Lua’s Prey",
@@ -102781,29 +102961,29 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/GrappleHookAbility",
         "name": "Rip Line",
-        "description": "Valkyr hurls forth a hook. If it hits an enemy, she pulls them to her. If it hits terrain, she pulls herself to the hook's location.",
+        "description": "Valkyr hurls forth a hook and pulls herself to whatever it hits. If it hits an enemy, nearby foes are pulled in as she unleashes a coordinated Melee attack.",
         "imageName": "rip-line-b7714c7733.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/BerserkerScreamAbility",
         "name": "Warcry",
-        "description": "Valkyr lets out a rallying cry that bolsters her allies Attack Speed while slowing down nearby enemies.",
+        "description": "Valkyr lets out a rallying cry that bolsters Armor and Attack Speed for allies while in <AFFINITY_SHARE>Affinity Range.",
         "imageName": "warcry-bee9507006.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/ShieldBashAbility",
         "name": "Paralysis",
-        "description": "Valkyr unleashes her shields, stunning and damaging enemies around her.",
+        "description": "Unleash a damaging blast, slowing its victims while increasing their Melee Damage Vulnerability.",
         "imageName": "paralysis-3bfe2d9d48.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/LastStandAbility",
         "name": "Hysteria",
-        "description": "Valkyr is imbued with energy and becomes a ball of vicious rage, capable of unleashing a torrent of deadly claw attacks on unsuspecting foes.",
+        "description": "Valkyr bares her deadly claws, unleashing devastating attacks that also heal her. Valkyr becomes immune to Status Effects and her Armor bonus from Warcry is multiplied.",
         "imageName": "hysteria-e7a04e411b.png"
       }
     ],
-    "armor": 735,
+    "armor": 1000,
     "aura": "madurai",
     "buildPrice": 25000,
     "buildQuantity": 1,
@@ -103694,7 +103874,7 @@
     "exalted": [
       "/Lotus/Powersuits/Berserker/BerserkerMeleePrime"
     ],
-    "health": 270,
+    "health": 650,
     "imageName": "valkyr-prime-354cd87f77.png",
     "introduced": {
       "name": "Hotfix 19.0.7",
@@ -103709,7 +103889,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Valkyr Prime",
-    "passiveDescription": "Recover |PERCENT|% faster from being knocked down.",
+    "passiveDescription": "Valkyr accumulates Rage when hitting or killing enemies with melee weapons, increasing her Melee Damage up to |PERCENT|%. Taking fatal damage when the Rage meter is above |CONSUME|% consumes the meter, preventing death and granting |DURATION|s of invulnerability.",
     "patchlogs": [
       {
         "name": "Update 32.2.0: Lua’s Prey",
@@ -115360,7 +115540,7 @@
             "location": "Axi V12 Relic",
             "rarity": "Uncommon",
             "type": "Xaku Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.11,
@@ -115374,7 +115554,7 @@
             "location": "Axi V12 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.13,
@@ -115388,7 +115568,7 @@
             "location": "Axi V12 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.17,
@@ -115402,7 +115582,7 @@
             "location": "Axi V12 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
@@ -115443,7 +115623,7 @@
             "location": "Meso T8 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2,
@@ -115464,7 +115644,7 @@
             "location": "Meso T8 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2333,
@@ -115485,7 +115665,7 @@
             "location": "Meso T8 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Xaku Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.2533,
@@ -115506,7 +115686,7 @@
             "location": "Meso T8 Relic",
             "rarity": "Uncommon",
             "type": "Xaku Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjectionYareliPrimeCBronze"
           }
         ],
         "masterable": false,
@@ -116028,28 +116208,28 @@
             "location": "Neo A14 Relic",
             "rarity": "Uncommon",
             "type": "Yareli Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.13,
             "location": "Neo A14 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.17,
             "location": "Neo A14 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           },
           {
             "chance": 0.2,
             "location": "Neo A14 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionYareliPrimeABronze"
           }
         ]
       },
@@ -116067,28 +116247,28 @@
             "location": "Lith Z4 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2,
             "location": "Lith Z4 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2333,
             "location": "Lith Z4 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           },
           {
             "chance": 0.2533,
             "location": "Lith Z4 Relic",
             "rarity": "Uncommon",
             "type": "Yareli Prime Chassis Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeBBronze"
           }
         ],
         "masterable": false,
@@ -116108,28 +116288,28 @@
             "location": "Lith Y1 Relic",
             "rarity": "Rare",
             "type": "Yareli Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.04,
             "location": "Lith Y1 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Yareli Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.06,
             "location": "Lith Y1 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Yareli Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           },
           {
             "chance": 0.1,
             "location": "Lith Y1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Neuroptics Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T1VoidProjectionYareliPrimeEBronze"
           }
         ],
         "masterable": false,
@@ -116160,28 +116340,28 @@
             "location": "Axi Y1 Relic",
             "rarity": "Rare",
             "type": "Yareli Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.04,
             "location": "Axi Y1 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Yareli Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.06,
             "location": "Axi Y1 Relic (Flawless)",
             "rarity": "Rare",
             "type": "Yareli Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           },
           {
             "chance": 0.1,
             "location": "Axi Y1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Yareli Prime Systems Blueprint",
-            "uniqueName": ""
+            "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeCBronze"
           }
         ],
         "masterable": false,
@@ -116218,7 +116398,7 @@
     "sex": "Female",
     "shield": 550,
     "skipBuildTimePrice": 50,
-    "sprint": 1,
+    "sprint": 1.1,
     "sprintSpeed": 1.1,
     "stamina": 3,
     "tradable": false,

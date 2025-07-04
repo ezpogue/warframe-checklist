@@ -1,6 +1,6 @@
 // scripts/fetchItems.js
 import fs from 'fs';
-import Items from '@wfcd/items';
+import Items from '@wfcd/items'; //if not getting new items, run npm update @wfcd/items
 
 const categories = {
   warframes: item => item.category === 'Warframes',
