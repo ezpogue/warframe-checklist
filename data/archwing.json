@@ -912,8 +912,8 @@
         "crit_mult": 3,
         "status_chance": 20,
         "shot_type": "Projectile",
-        "shot_speed": 400,
-        "flight": 400,
+        "shot_speed": 120,
+        "flight": 120,
         "damage": {
           "impact": 230,
           "heat": 330
@@ -927,8 +927,8 @@
         "status_chance": 20,
         "charge_time": 0.5,
         "shot_type": "Projectile",
-        "shot_speed": 400,
-        "flight": 400,
+        "shot_speed": 140,
+        "flight": 140,
         "falloff": {
           "start": 100,
           "end": 200,
@@ -1814,7 +1814,7 @@
     "attacks": [
       {
         "name": "Normal Attack",
-        "speed": 9.09,
+        "speed": 6.67,
         "crit_chance": 20,
         "crit_mult": 2.2,
         "status_chance": 30,
@@ -6146,7 +6146,7 @@
     "attacks": [
       {
         "name": "Auto-Burst",
-        "speed": 6,
+        "speed": 3,
         "crit_chance": 30,
         "crit_mult": 2.2,
         "status_chance": 28,
@@ -6157,7 +6157,7 @@
       },
       {
         "name": "Auto Burst Explosion",
-        "speed": 6,
+        "speed": 3,
         "crit_chance": 30,
         "crit_mult": 2.2,
         "status_chance": 28,
