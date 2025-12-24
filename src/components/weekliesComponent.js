@@ -15,6 +15,7 @@ const weeklyActivities = [
   { name: "Steel Path Circuit", key: "weekly_sp-circuit" },
   { name: "Trade in Steel Essence", key: "weekly_teshin" },
   { name: "Buy Archon Shard from Bird 3", key: "weekly_bird3" },
+  { name: "Descendia", key: "weekly_descendia" }
 ];
 
 const WeekliesComponent = ({resetTrigger}) => {
